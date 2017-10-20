@@ -1,0 +1,1234 @@
+
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+/*Font Linotte*/
+
+@font-face {
+  font-family: 'r0c0iLinotte';
+  src: url('r0c0iLinotte-Bold.eot') format('embedded-opentype');
+  src: url('../fonts/r0c0iLinotte-Bold.woff') format('woff'), url('../fonts/r0c0iLinotte-Bold.ttf') format('truetype'), url('../fonts/r0c0iLinotte-Bold.svg#r0c0iLinotte-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'r0c0iLinotte';
+  src: url('r0c0iLinotte-Regular.eot') format('embedded-opentype');
+  src: url('../fonts/r0c0iLinotte-Regular.woff') format('woff'), url('../fonts/r0c0iLinotte-Regular.ttf') format('truetype'), url('../fonts/r0c0iLinotte-Regular.svg#r0c0iLinotte-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+    background: #24336C;
+    color: #888888;
+    font: 400 14px/28px 'r0c0iLinotte', sans-serif;
+    -webkit-text-size-adjust: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+div#coupon_result {
+   
+    display: inline-block;
+    padding: 5px;
+    color: #24336c;
+    font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+h1 {
+    font-size: 93px;
+    line-height: 93px;
+    color: #24336C;
+}
+@media (max-width: 479px) {
+    h1 {
+        font-size: 85px;
+    }
+}
+h2 {
+    font-size: 56px;
+    line-height: 75px;
+    color: #333333;
+}
+h3 {
+       font-size: 25px;
+    line-height: 20px;
+    color: #333333;
+	    font-weight: bold;
+}
+h4 {
+    font-size: 34px;
+    line-height: 42px;
+    color: #333333;
+}
+h5 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #24336C;
+}
+h6 {
+    font-size: 24px;
+    line-height: 28px;
+}
+a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+a:focus {
+    outline: none;
+}
+a[href^="tel:"],
+a[href^="callto:"] {
+    color: inherit;
+    text-decoration: none;
+}
+.fa {
+    line-height: inherit;
+}
+[class*='fa-']:before {
+    font-weight: 400;
+    font-family: 'FontAwesome';
+}
+.page {
+    overflow: hidden;
+    min-height: 500px;
+}
+.lt-ie9 .page {
+    min-width: 1200px;
+}
+.center {
+    text-align: center;
+}
+.row+.row {
+    margin-top: 26px;
+}
+*+.inline-list {
+    margin-top: 40px;
+}
+*+form {
+    margin-top: 20px;
+}
+h3+* {
+    margin-top: 38px;
+}
+h5+* {
+    margin-top: 15px;
+}
+h2+* {
+    margin-top: 28px;
+}
+*+span {
+    margin-top: 19px;
+}
+*+address {
+    margin-top: 81px;
+}
+address+* {
+    margin-top: 98px;
+}
+.brand {
+    display: inline-block;
+    position: relative;
+    padding-left: 117px;
+}
+.brand h1:before {
+    content: '';
+    position: absolute;
+    width: 102px;
+    height: 66px;
+    background: url(../images/page-1_sprite.png);
+    background-position: -5px -5px;
+    left: 4px;
+    top: 14px;
+}
+.brand a:active {
+    background: transparent;
+}
+.bg-primary {
+    background: #24336C;
+}
+.bg-primary .clr1 {
+    color: #333333;
+}
+.bg-secondary {
+    background: #24336C;
+}
+.bg-secondary p {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 38px;
+}
+.bg-secondary span {
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+}
+.inline-list .fa {
+    font: 0/0 a;
+}
+.inline-list .fa:before {
+    font-size: 20px;
+    color: #ffffff;
+}
+.inline-list .fa:hover:before {
+    color: #24336C;
+}
+.inline-list li {
+    display: inline-block;
+}
+.inline-list li+li {
+    margin-left: 16px;
+}
+.btn {
+    background: #EE2437;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px rgba(98, 134, 148, 0.45);
+	cursor: pointer;
+	border-radius: 5px;
+}
+.btn:hover {
+    background: #b90b0b;
+    box-shadow: none;
+}
+@media (max-width: 979px) {
+    .btn {
+        font-size: 13px;
+    }
+}
+@media (max-width: 767px) {
+    .btn {
+        font-size: 20px;
+    }
+}
+.box:before,
+.box:after {
+    content: " ";
+    display: table;
+}
+.box:after {
+    clear: both;
+}
+.box_aside {
+    text-align: center;
+    float: left;
+    font-size: 44px;
+    color: #ffffff;
+    background: #24336C;
+    width: 102px;
+    height: 102px;
+    line-height: 90px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 29px;
+}
+.box_cnt h4+p {
+    margin-top: 13px;
+}
+.box_cnt__no-flow {
+    overflow: hidden;
+}
+@media (max-width: 979px) {
+    .box h4 {
+       font-size: 24px;
+    }
+    .box_aside {
+        float: none;
+    }
+    .box_cnt {
+        margin-top: 15px;
+    }
+}
+.road-type {
+       margin-left: -20px;
+}
+.airport_type {
+    display: block;
+    padding: 10px 0 0 0;
+}
+.airport_type button {
+    padding: 5px;
+    background: #ec233b;
+    border: 0;
+    color: #fff;
+    padding: 5px;
+}
+.road-type input {
+    display: none;
+}
+.grid_3.input-block.start {
+    padding-top: 61px;
+}
+.exchange {
+    position: absolute;
+    bottom: -135px;
+    color: #ec233b;
+    font-size: 40px;
+    left: 15px;
+    width: 100%;
+    text-align: center;
+}
+.exchange:hover {
+    cursor: pointer;
+}
+.airport_type.invisible {
+    visibility: hidden;
+}
+.btn-airport_type:hover {
+    cursor: pointer;
+}
+.btn-airport_type.active {
+    background: #002d6f;
+	    box-shadow: 0 0 5px 1px #302f2f;
+}
+.road-type label {
+    background: #002d6f;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+input[type=radio]:checked ~ label{
+  color: #002d6f;
+  background:#fff;
+}
+
+.road-type label:hover {
+    cursor: pointer;
+}
+.inline {
+	display:inline-block;
+}
+.box1_aside {
+    color: #333333;
+    width: 136px;
+    height: 136px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 45px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 56px;
+    margin-top: 22px;
+}
+.box1_aside sup {
+    font-size: 26px;
+    margin-top: -9px;
+    display: inline-block;
+}
+.box1 h5 {
+    margin-top: 24px;
+}
+.box1 h5+p {
+    margin-top: 25px;
+    padding-right: 23px;
+}
+.sets2 .box1_aside {
+    background: transparent;
+    padding-top: 0;
+       margin: 0 auto;
+}
+blockquote.box1 {
+    text-align: center;
+}
+.sets2 .box1_aside img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.sets2 .box1_cnt p {
+    position: relative;
+    margin-top: 28px;
+    text-indent: 42px;
+    padding-right: 27px;
+}
+.sets2 .box1_cnt p:before {
+    position: absolute;
+    content: '\f10d';
+    font-family: 'FontAwesome';
+    font-size: 34px;
+    color: #24336C;
+    left: -42px;
+    top: -3px;
+}
+address {
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+}
+footer address {
+    font-size: 56px;
+    color: #24336C;
+}
+@media (max-width: 979px) {
+    address {
+        font-size: 56px;
+    }
+    *+address {
+        margin-top: 50px;
+    }
+    address+* {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 479px) {
+    address,
+    footer address {
+        font-size: 36px;
+    }
+}
+.toTop {
+    width: 60px;
+    height: 60px;
+    font-size: 37px;
+    line-height: 40px;
+    color: #fff;
+    background: #333;
+    position: fixed;
+    right: 66px;
+    bottom: 180px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 7px;
+    display: none;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    z-index: 20;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.toTop:hover {
+    color: #fff;
+    background: #f34235;
+    text-decoration: none;
+}
+@media only screen and (max-width: 1399px) {
+    .toTop {
+        display: none!important;
+    }
+}
+.parallax {
+    position: relative;
+    overflow: hidden;
+}
+.parallax_image,
+.parallax_pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-position: center center;
+    will-change: transform;
+}
+.parallax_image {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.parallax_pattern {
+    background-repeat: repeat;
+}
+.parallax_cnt {
+    position: relative;
+}
+.parallax1 * {
+    color: #ffffff;
+}
+.parallax1 h2 {
+    margin-top: 36px;
+    padding: 0 305px;
+}
+.parallax1 p {
+    font-size: 24px;
+    padding: 0px 100px;
+    line-height: 35px;
+}
+@media (max-width: 1199px) {
+    .parallax1 h2 {
+        padding: 0 10px;
+    }
+    .parallax1 p {
+        padding: 0px 10px;
+    }
+}
+@media (max-width: 479px) {
+    .parallax1 h2 {
+        font-size: 40px;
+        line-height: 45px;
+        padding: 0;
+    }
+    .parallax1 p {
+        font-size: 18px;
+        padding: 0;
+    }
+}
+header {
+    background: #cccccc;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 117px;
+}
+header span {
+    color: #24336C;
+}
+header p {
+    font-size: 56px;
+    color: #ffffff;
+}
+header h4 {
+    margin-left: 5px;
+    text-align: left;
+}
+header .brand+* {
+    margin-top: 40px;
+}
+header .bg-primary {
+    padding: 10px 29px 40px 29px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@media (max-width: 979px) {
+    header h4 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    header p {
+        font-size: 36px;
+    }
+    header .brand+* {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 767px) {
+    header h4 {
+        font-size: 24px;
+    }
+}
+main {
+    display: block;
+    background: #ffffff;
+}
+.sets1 h5 {
+    padding-left: 28px;
+    position: relative;
+}
+.sets1 h5:before {
+    position: absolute;
+    content: '\f00c';
+    font-size: 24px;
+    font-family: 'FontAwesome';
+    left: 0;
+    top: 0;
+    color: #24336C;
+}
+.sets1 p {
+    padding-right: 20px;
+}
+.ins1 {
+    padding: 0 160px;
+}
+@media (max-width: 1199px) {
+    .ins1 {
+        padding: 0 15px;
+    }
+}
+.mg-add {
+    margin-top: 7px;
+    margin-left: 2px;
+	color: #ee2437;
+}
+.well {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.well1 {
+    padding-top: 29px;
+    padding-bottom: 36px;
+}
+.well2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.well3 {
+    padding-top: 44px;
+    padding-bottom: 45px;
+}
+.well_ins1 {
+    padding-bottom: 40px;
+}
+footer {
+    background: #24336C;
+    color: #333333;
+    padding-top: 45px;
+    padding-bottom: 42px;
+}
+footer address a {
+    color: white !important;
+}
+footer .invite {
+    font-size: 34px;
+    color:#ffffff;
+}
+footer .brand h1 {
+    color: #ffffff;
+}
+footer .brand h1:before {
+    background-position: -5px 72px;
+}
+footer .rights {
+    color: #24336C;
+    font-size: 12px;
+}
+footer *+.rights {
+    
+}
+footer *+.invite {
+    margin-top: 49px;
+}
+footer *+address {
+    margin-top: 35px;
+}
+footer address+* {
+    margin-top: 45px;
+}
+.mfcontrols.btn-group button {
+    width: 100%;
+    border: 0;
+    margin: 10px 0;
+    padding: 10px;
+}
+.grid_4.preffix_4.bg-primary {
+    margin-bottom: 30px;
+}
+.text-center {
+    text-align: center;
+}
+table.pricing-table {
+  
+       max-width: 95%;
+	       color: black;
+    margin: 20px auto 0;
+}
+.daterangepicker.dropdown-menu.ltr.single.opensright {
+    display: none;
+}
+table.pricing-table th {
+	    font-weight: bold;
+    background: #EE2437;
+    padding: 10px;
+    font-size: 19px;
+    color: #fff;
+    border: 1px solid #ee2437;
+}
+table.pricing-table td {
+    padding: 10px;
+    border: 1px solid;
+	vertical-align: middle;
+}
+a.btn.btn-booking {
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+}
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+#map {
+    height: 400px;
+}
+/* Optional: Makes the sample page fill the window. */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+	    font-family: r0c0iLinotte;
+}
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+#origin-input, #destination-input {
+	    
+    background-color: #e3e3e3;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 15px;
+    text-overflow: ellipsis;
+	
+    width: 200px;
+    height: auto;
+	position: absolute;
+  bottom: -150px;
+    left: 0;
+    width: 100%;
+	    background-image: url(../images/locate1.PNG);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 20px;
+	font-family: r0c0iLinotte;
+}
+#destination-input {
+	 background-image: url(../images/locate2.PNG);
+}
+input#origin-input {
+    position: initial;
+}
+.booking-header .btn {
+    border: 0;
+	    border-radius: 5px;
+    position: absolute;
+    bottom: -150px;
+    padding: 14px 20px;
+}
+.input-block {
+	position: relative;
+}
+#origin-input:focus,
+#destination-input:focus {
+   
+}
+#mode-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    margin-left: 12px;
+    padding: 5px 11px 0px 11px;
+    display: none;
+}
+#mode-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+button#testbutton {
+  
+    z-index: 1;
+    left: 10px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    /* position: fixed; */
+    top: 20px;
+    background-color: #fefefe;
+    width: 700px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: -5px;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #24336C;
+    color: white;
+	    position: relative;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+h5#exampleModalLabel {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+div#myModal b {
+    font-weight: bold;
+}
+button.btn.btn-primary.btn-booking {
+    display: inline-block;
+    border: 0;
+    padding: 10px 20px;
+    /* margin: 0 auto; */
+    margin: 10px 0;
+}
+.modal-body .grid_6 {
+    width: 50%;
+    float: left;
+}
+.modal-body input[type="text"] {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-indent: 15px;
+}
+.modal-body textarea {
+    width: 100%;
+    height: 60px;
+}
+.clearfix {
+	clear:both;
+}
+div#myModal {
+    /* font-weight: bold; */
+    color: #000;
+}
+.modal-body label {
+    display: block;
+    font-weight: bold;
+    color: #565555;
+}
+div#booking_message, div#booking_message2 {
+    font-size: 20px;
+    text-align: center;
+    color: green;
+}
+.modal-body select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#bookingModal .modal-content {
+    margin-top: 60px;
+}
+button#book_airport {
+    border: 0;
+    padding: 10px 20px;
+    margin: 20px;
+}
+.grid_8.bg-primary h4 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.grid_8.bg-primary a {
+    color: #fff;
+}
+.box_cnt.box_cnt__no-flow * {
+    color: #fff;
+}
+footer {
+    background: #969696;
+    color: #333333;
+   padding-top:0;
+    padding-bottom: 10px;
+}
+.rights.center {
+    font-size: 22px;
+    color: #000;
+}
+.menu-top a {
+    float: left;
+    color: #f93448;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    
+}
+.social-icon {
+    display: inline-block;
+    padding-top: 100px;
+}
+.social-icon img {
+    margin-left: 10px;
+}
+.hotline a, .hotline p  {
+	 color: #f93448;
+    font-size:25px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+.booking-header {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.42);
+}
+
+header {
+    position: relative;
+	padding:0;
+}
+header img {
+    width: 100%;
+    height: auto;
+}
+.row.top {
+    position: absolute;
+    top: 0;
+    padding: 10px 0;
+ 
+}
+.right {
+	text-align:right;
+}
+.grid_6.footer-contact.right h3 {
+    color: #EE2437;
+    text-transform: uppercase;
+       font-size: 26px;
+}
+.grid_6.footer-contact.right {
+    color: #fff;
+    font-size: 15px;
+	    padding-top: 20px;
+		    line-height: 16px;
+}
+.social.text-center li {
+    display: inline-block;
+    color: #fff;
+}
+footer img {
+    width: 200px;
+	padding-top: 15px;
+}
+.grid_6.footer-contact.right span {
+    text-transform: uppercase;
+}
+.background-bottom {
+	background:url(../images/background-duoi.png)
+}
+.well_ins1 h2 {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    width: 470px;
+    margin: 0 auto;
+    line-height: 45px;
+    max-width: 100%;
+    padding-top: 235px;
+}
+.well_ins1 p {
+    color: #fff;
+    font-size: 30px;
+}
+section#pricing {
+    padding-bottom: 0;
+}
+a.btn {
+    padding: 10px 30px;
+    margin: 0 20px 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+h1.center.pricing-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+}
+section#cars p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+.visible-phone {
+	display:none;
+}
+@media (max-width: 767px) {
+	.exchange {
+    position: initial;
+	}
+	.grid_6.hotline.on-mobile.right.visible-phone {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.49);
+}
+section.well.well_ins1.center {
+    background-position: -370px top;
+}
+footer img {
+    width: 75%;
+}
+	.row+.row, [class*="grid_"]+[class*="grid_"] {
+    margin-top: 15px;
+}
+	div#home {
+    position: initial;
+}
+div#home img {
+    width: 150px;
+}
+div#home {
+	    background: none;
+    position: absolute;
+bottom: initial;
+    top: 15px;
+    padding-top: 30px;
+ 
+}
+.grid_3.input-block.start {
+    padding-top: 10px;
+}
+.row.top {
+  
+   position: absolute;
+    top: 0;
+    padding: 0;
+    border-bottom: 0;
+    width: 100%;
+    left: 0;
+	    background: #24336c;
+}
+.menu-top a {
+    float: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: bold;
+	display: inline-block;
+   
+}
+.menu-top a.visible-phone {
+    display: inline-block;
+}
+.hidden-phone {
+	display:none !important;
+}
+.visible-phone {
+	display:block;
+}
+#origin-input, #destination-input {
+  
+    position: initial;
+}
+.booking-header .btn {
+   
+    position: initial;
+ 
+    margin-bottom: 20px;
+}
+.grid_4.hotline {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    z-index: 999;
+}
+header .brand+* {
+    margin-top: 0;
+}
+header {
+   
+    padding-top: 0;
+}
+*+address {
+    margin-top: 25px;
+}
+input#destination-input {
+    top: 55px !important;
+    left: 0 !important;
+}
+#origin-input, #destination-input {
+    background-color: #e3e3e3;
+   
+    padding: 10px 0;
+  
+    margin-left: 0;
+	text-indent: 35px;
+}
+.well {
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+section.well.bg-primary {
+    text-align: center;
+}
+.mg-add {
+   
+    margin: 0 auto;
+}
+.container, .container-fluid {
+    width: 100%;
+   
+}
+.sets2 .box1_aside {
+  
+    margin: 0 auto;
+}
+section.well3.bg-secondary.sets2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#map {
+    height: 250px;
+}
+footer {
+   
+    text-align: center;
+}
+footer img {
+    width: 150px;
+}
+.grid_6.footer-contact.right {
+      margin-top: 0;
+    text-align: center;
+}
+.modal-body .grid_6 {
+    width: 100%;
+    float: left;
+}
+.modal-body {
+ 
+    padding-bottom: 40px;
+}
+.modal-content {
+  
+    margin-top: 55px;
+}
+.box_aside {
+  
+    width: 83px;
+    height: 30px;
+    line-height: 30px;
+}
+.well1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h3+* {
+    margin-top: 20px;
+}
+h3 {
+      font-size: 25px;
+    line-height: 20px;
+}
+.well_ins1 h2 {
+ 
+    font-size: 30px;
+ 
+    line-height: 40px;
+    margin-top: 20px;
+}
+.well2 {
+    padding-top: 30px;
+}
+.sets2 .box1_cnt p {
+ 
+    margin-top: 20px;
+   
+    font-size: 15px;
+  
+}
+}
+input.calendar {
+    background: url(../images/btn_calendar.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.range_inputs button {
+    border: 1px;
+    text-transform: inherit;
+    padding: 5px 8px;
+    font-size: 16px;
+    background: #161f41;
+    border-radius: 5px;
+}
+button.cancelBtn.btn.btn-sm.btn-default {
+    background: #ee2437;
+}
+section#cars {
+    position: relative;
+}
+button.w3-button.w3-black.w3-display-right {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+}
+button.w3-button.w3-black.w3-display-left{
+	 position: absolute;
+    left: 5%;
+    top: 50%;
+}
+b {
+    font-weight: bold !important;
+}
