@@ -12,7 +12,7 @@ if (file_exists(dirname(__FILE__) . '/defines.php'))
 }
 if (!defined('JPATH_BASE'))
 {
-   define('JPATH_BASE', 'driver/');
+   define('JPATH_BASE', '../ycardriver/');
 }
 if (!defined('_JDEFINES'))
 {
