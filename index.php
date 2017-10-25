@@ -1229,7 +1229,8 @@ Mã số thuế: 0105985643
 					
 						<div class="clearfix"></div>
 						<div class="center">
-							<button type="submit" class="btn btn-primary btn-booking">Đặt xe</button>	
+							<button type="submit" id="booking_car_button" class="btn btn-primary btn-booking">Đặt xe</button>	
+							
 						</div>	
 				</div>
 				<div id="booking_message" style="display:none;">
@@ -1296,6 +1297,7 @@ Mã số thuế: 0105985643
 			$("#ajaxform").submit(function(e)
 			{
 				 var data = $('form#ajaxform').serialize();
+				 $('#booking_car_button').html("<img src='https://cdnssl.mediafire.com/images/icons/ajax-loader-grey_round.gif' alt='loading' style='height: 20px;' />Hệ thống đang xử lý. Xin vui lòng chờ!"); 
 				 console.log(data);
 					//su dung ham $.ajax()
 					$.ajax({
@@ -1308,6 +1310,7 @@ Mã số thuế: 0105985643
 								{
 									alert('Sai tên hoặc mật khẩu');
 								}else{
+									$('#loadingmessage').hide();
 									console.log("ok roi");
 									var field_available = document.getElementById('booking_detail');
 									var booking_message = document.getElementById('booking_message');
