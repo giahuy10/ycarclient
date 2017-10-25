@@ -1300,7 +1300,7 @@ Mã số thuế: 0105985643
 					//su dung ham $.ajax()
 					$.ajax({
 					type : 'POST', //kiểu post
-					url  : 'http://192.168.64.2/ycarbackend/index.php?option=com_uber&view=ajax&task=client_booking&format=raw', //gửi dữ liệu sang trang submit.php
+					url  : 'http://driver.ycar.vn/index.php?option=com_uber&view=ajax&task=client_booking&format=raw', //gửi dữ liệu sang trang submit.php
 					data : data,
 					success :  function(data)
 						   {                       
