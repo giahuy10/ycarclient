@@ -782,9 +782,7 @@ Mã số thuế: 0105985643
 				var destinations = document.getElementById('destination-input').value;
 				var start_point = check_location(origins);
 				var end_point = check_location(destinations);
-				var distance_value = get_distance(origins,destinations,myFunction);
-				
-				console.log("global:"+dis_global);
+				var distance_value ="";
 				var sale_price = checkcoupont(coupon,car_type,way,start_point,end_point,pick_up_time);
 				
 				
@@ -796,23 +794,7 @@ Mã số thuế: 0105985643
 			function myFunction(xhttp) {
 				  dis_global = xhttp;
 				}
-			function get_distance(origins,destinations,cfunc) {
-					 var xmlhttp = new XMLHttpRequest();
-					xmlhttp.onreadystatechange = function() {
-						if (this.readyState == 4 && this.status == 200) {
-							//console.log(this.status);
-							//console.log(this.responseText);
-							cfunc (this.responseText);
-							
-						}
-					};
-					//return xmlhttp.onreadystatechange;
-					//console.log(origins);
-					xmlhttp.open("GET", "distance.php?start=" + origins+"&end="+destinations, true);
-					xmlhttp.send();
-					 
-				
-			}
+			
 		function check_location(location){
 				if (location == "Sân bay Nội Bài, Sóc Sơn, Hanoi, Vietnam" || location == "Noi Bai International Airport, Sóc Sơn, Hanoi, Vietnam" || location == "Noi Bai International Terminal 2, Phú Cường, Hanoi, Vietnam" )
 					return 1;
@@ -1314,10 +1296,11 @@ Mã số thuế: 0105985643
 			$("#ajaxform").submit(function(e)
 			{
 				 var data = $('form#ajaxform').serialize();
+				 console.log(data);
 					//su dung ham $.ajax()
 					$.ajax({
 					type : 'POST', //kiểu post
-					url  : 'xulytest.php', //gửi dữ liệu sang trang submit.php
+					url  : 'http://192.168.64.2/ycarbackend/index.php?option=com_uber&view=ajax&task=client_booking&format=raw', //gửi dữ liệu sang trang submit.php
 					data : data,
 					success :  function(data)
 						   {                       
@@ -1325,6 +1308,7 @@ Mã số thuế: 0105985643
 								{
 									alert('Sai tên hoặc mật khẩu');
 								}else{
+									console.log("ok roi");
 									var field_available = document.getElementById('booking_detail');
 									var booking_message = document.getElementById('booking_message');
 									field_available.style.display = "none";
@@ -1372,25 +1356,7 @@ $(function() {
   ga('send', 'pageview');
 
 </script>
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '483103472056712'); 
-fbq('track', 'PageView');
-</script>
-<noscript>
-<img height="1" width="1" 
-src="https://www.facebook.com/tr?id=483103472056712&ev=PageView
-&noscript=1"/>
-</noscript> 
-<!-- End Facebook Pixel Code -->
+
 
 </body>
 </html>
